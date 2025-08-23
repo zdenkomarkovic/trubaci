@@ -1,7 +1,7 @@
+import { motion } from "framer-motion";
 import { CardHeader, CardTitle, CardContent, Card } from "./ui/card";
 import MotionComponent1 from "./MotionComponent1";
 import { Cards1Data } from "@/constants/index";
-import { motion } from "framer-motion";
 
 const Cards1 = ({ title, data }: { title: string; data: Cards1Data[] }) => {
   return (
