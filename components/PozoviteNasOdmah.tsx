@@ -5,51 +5,41 @@ import { PhoneIcon } from "lucide-react";
 
 const PozoviteNasOdmah = () => {
   return (
-    <div className="relative mt-10 md:mt-20 py-10 md:py-20 overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600 animate-gradient-x"></div>
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section className="py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
       
-      {/* Floating musical notes */}
-      <div className="absolute top-10 left-10 text-4xl text-white/30 float-animation">🎵</div>
-      <div className="absolute top-20 right-20 text-3xl text-white/30 float-animation" style={{animationDelay: '1s'}}>🎶</div>
-      <div className="absolute bottom-20 left-1/4 text-5xl text-white/30 float-animation" style={{animationDelay: '2s'}}>🎺</div>
-      <div className="absolute bottom-10 right-1/3 text-4xl text-white/30 float-animation" style={{animationDelay: '0.5s'}}>🎼</div>
-      
-      <div className="container px-2 md:px-4 mx-auto relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="glass-effect rounded-3xl p-8 md:p-12 mb-8"
-          >
-            <h2 className="text-2xl md:text-4xl font-black text-white mb-6 leading-tight">
-              🎺 Trubači Kobre iz Velike Plane su tu za vas! 🎺
-              <br />
-              <span className="text-yellow-300">✨ Rezervišite nastup za vašu proslavu ✨</span>
-            </h2>
-            <p className="text-lg md:text-xl text-white/90 font-medium">
-              Učinite je nezaboravnom uz najbolju muziku tradicije i moderne!
-            </p>
-          </motion.div>
+      <div className="container px-4 md:px-8 mx-auto max-w-4xl relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            Rezervišite nastup <span className="gold-accent">trubača Kobre</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-8"></div>
+          <p className="text-lg md:text-2xl text-gray-300 mb-8 leading-relaxed">
+            Učinite vašu proslavu nezaboravnom uz najbolju muziku tradicije i moderne!
+            <br />
+            <span className="text-yellow-400">Dostupni smo 24/7 za sve termine u Velikoj Plani i celoj Srbiji</span>
+          </p>
           
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             <a href="tel:+381641234567">
-              <button className="bg-white text-orange-600 px-8 md:px-12 py-4 md:py-6 rounded-full text-xl md:text-2xl font-black shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-4 mx-auto pulse-glow">
-                <PhoneIcon className="w-8 h-8" />
-                📞 REZERVIŠITE NASTUP ODMAH
-                <span className="animate-bounce">🎵</span>
+              <button className="bg-gradient-to-r from-yellow-600 to-yellow-500 text-white px-8 md:px-12 py-4 md:py-6 rounded-lg text-xl md:text-2xl font-bold shadow-2xl hover:shadow-3xl transition-all duration-300 flex items-center gap-4 mx-auto">
+                <PhoneIcon className="w-6 h-6 md:w-8 md:h-8" />
+                Pozovite nas odmah
               </button>
             </a>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

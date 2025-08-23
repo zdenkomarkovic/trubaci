@@ -1,17 +1,29 @@
-import Image from "@/node_modules/next/image";
+import Image from "next/image";
 import React from "react";
 
 const BackgroundImage = () => {
   return (
-    <div className="relative flex min-h-[30dvh]">
-      {/* <div className="absolute top-0 left-0 w-full h-full bg-black/20 z-[1]" /> */}
-      <Image
-        src={"/pozadina.jpg"}
-        alt="slep puric"
-        fill
-        className="w-full h-full  object-cover"
-      />
-    </div>
+    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
+      <div className="absolute inset-0">
+        <Image
+          src="/hero1.jpg"
+          alt="Trubači Kobre Velika Plana - atmosfera proslave"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
+      
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Atmosfera koja se <span className="gold-accent">pamti</span>
+        </h2>
+        <p className="text-lg md:text-2xl font-light leading-relaxed">
+          Svaki nastup trubača Kobre je jedinstveno iskustvo koje spaja tradiciju sa modernim pristupom,
+          stvarajući nezaboravne trenutke za vas i vaše goste.
+        </p>
+      </div>
+    </section>
   );
 };
 

@@ -7,63 +7,50 @@ import { motion } from "framer-motion";
 const Statistika = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
+  const stats = [
+    { number: 24, suffix: "+", label: "Godina iskustva", icon: "🎂" },
+    { number: 1500, suffix: "+", label: "Uspešnih nastupa", icon: "🎭" },
+    { number: 300, suffix: "+", label: "Svadbi ozvučeno", icon: "💒" },
+    { number: 50, suffix: "+", label: "Gradova u Srbiji", icon: "🏙️" }
+  ];
+
   return (
-    <section ref={ref} className="relative py-16 md:py-24 text-center overflow-hidden">
-      {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-red-50"></div>
-      
-      {/* Decorative elements */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-orange-200 rounded-full opacity-20 blur-2xl"></div>
-      <div className="absolute bottom-10 right-10 w-40 h-40 bg-red-200 rounded-full opacity-20 blur-2xl"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <section ref={ref} className="py-16 md:py-24 bg-gradient-to-r from-yellow-600 to-yellow-500">
+      <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <motion.div
-          initial={{ y: 50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-black text-primary mb-4">
-            📊 Naši rezultati u brojkama 📊
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+            Naši rezultati u brojkama
           </h2>
-          <div className="inline-block bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-2 rounded-full text-lg font-bold">
-            🏆 Dokaz kvaliteta kroz godine 🏆
-          </div>
+          <div className="w-24 h-1 bg-white mx-auto mb-6"></div>
+          <p className="text-lg md:text-xl text-yellow-100">
+            Dokaz kvaliteta kroz godine rada
+          </p>
         </motion.div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
-          {[
-            { number: 24, suffix: "+", label: "Godina iskustva", icon: "🎂", color: "from-blue-500 to-purple-500" },
-            { number: 1500, suffix: "+", label: "Uspešnih nastupa", icon: "🎭", color: "from-green-500 to-teal-500" },
-            { number: 300, suffix: "+", label: "Svadbi ozvučeno", icon: "💒", color: "from-pink-500 to-rose-500" },
-            { number: 50, suffix: "+", label: "Gradova u Srbiji", icon: "🏙️", color: "from-orange-500 to-red-500" }
-          ].map((stat, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          {stats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ delay: index * 0.2, duration: 0.6, type: "spring" }}
+              transition={{ delay: index * 0.2, duration: 0.6 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05, y: -10 }}
-              className="relative"
+              className="text-center"
             >
-              <div className={`bg-gradient-to-br ${stat.color} p-6 md:p-8 rounded-3xl text-white shadow-2xl relative overflow-hidden group`}>
-                {/* Background decoration */}
-                <div className="absolute top-0 right-0 text-6xl opacity-10 group-hover:opacity-20 transition-opacity">
-                  {stat.icon}
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/20">
+                <div className="text-4xl md:text-5xl mb-4">{stat.icon}</div>
+                <div className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  {inView && <CountUp end={stat.number} duration={2} suffix={stat.suffix} />}
                 </div>
-                
-                <div className="relative z-10">
-                  <div className="text-4xl mb-2">{stat.icon}</div>
-                  <p className="text-4xl md:text-5xl font-black mb-2">
-                    {inView && <CountUp end={stat.number} duration={2} suffix={stat.suffix} />}
-                  </p>
-                  <p className="text-lg md:text-xl font-bold">{stat.label}</p>
-                </div>
-                
-                {/* Shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                <p className="text-lg md:text-xl text-yellow-100 font-medium">
+                  {stat.label}
+                </p>
               </div>
             </motion.div>
           ))}

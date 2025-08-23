@@ -7,48 +7,54 @@ import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 
 const Cardlist = () => {
   return (
-    <div className="py-20">
-      <div className="container px-2 md:px-4 mx-auto space-y-10">
-        <h2 className="text-4xl md:text-6xl text-primary text-center">
-          Naše usluge u Velikoj Plani i okolini
-        </h2>
-        <p className="text-center text-lg md:text-xl max-w-4xl mx-auto">
-          Trubači Kobre pružaju kompletne muzičke usluge za sve vrste proslava. Naš bogat repertoar i profesionalni pristup garantuju nezaboravno iskustvo.
-        </p>
-        <div className=" flex flex-col gap-4 md:gap-6 overflow-hidden">
-          {workList.map((item, index) => {
-            return (
-              <motion.div
-                key={index}
-                initial={{ x: index % 2 === 0 ? -100 : 100, opacity: 0 }} // Naizmenično levo/desno
-                whileInView={{ x: 0, opacity: 1 }} // Animira se ka centru
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className={`flex ${
-                  index % 2 === 0 ? "justify-start" : "justify-end"
-                } w-full`}
-              >
-                <Card className="  md:w-3/4 shadow-lg md:p-5">
-                  <CardHeader>
-                    <CardTitle className="flex gap-5 text-2xl md:text-4xl items-center mx-auto text-primary">
-                      <span className="text-4xl md:text-8xl">
-                        {<item.icon />}
-                      </span>
-                      {item.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <p className=" first-letter:pl-6 text-lg md:text-2xl">
-                      {item.text}
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            );
-          })}
+    <section className="py-16 md:py-24 bg-white">
+      <div className="container px-4 md:px-8 mx-auto max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            Naše <span className="gold-accent">usluge</span>
+          </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6"></div>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            Pružamo kompletne muzičke usluge za sve vrste proslava u Velikoj Plani i okolini
+          </p>
+        </motion.div>
+
+        <div className="grid gap-8 md:gap-12">
+          {workList.map((item, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"} w-full`}
+            >
+              <Card className="w-full md:w-4/5 lg:w-3/4 elegant-shadow hover:shadow-2xl transition-shadow duration-300">
+                <CardHeader className="bg-gradient-to-r from-yellow-50 to-yellow-100">
+                  <CardTitle className="flex items-center gap-4 text-2xl md:text-3xl text-gray-900">
+                    <span className="text-4xl md:text-5xl text-yellow-600">
+                      <item.icon />
+                    </span>
+                    {item.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-6 md:p-8">
+                  <p className="text-lg md:text-xl leading-relaxed text-gray-700">
+                    {item.text}
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
