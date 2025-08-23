@@ -26,14 +26,14 @@ export default function Home() {
       <CardWithImage />
       <PozoviteNasOdmahImage />
       <Statistika />
-      <Cards1 title={"dodaj naslov"} data={cards1Data} />
+      <Cards1 title={"Zašto izabrati nas"} data={cards1Data} />
       <Cards2
-        title={"Elektroinstalacije i elektro ormani"}
+        title={"Naše najpopularnije usluge"}
         data={cards2Data}
         text={cards2DataText}
       />
       <Cards2Kosina
-        title={"Elektroinstalacije i elektro ormani"}
+        title={"Specijalne usluge"}
         data={cards2Data}
         text={cards2DataText}
       />

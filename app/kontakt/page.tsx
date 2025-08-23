@@ -58,70 +58,70 @@ export default function Contact() {
   return (
     <div className="">
       <div className="container mx-auto pt-28 pb-16 px-6 md:px-8 md:py-32 space-y-12 md:space-y-24">
-        <h1 className="text-2xl md:text-5xl pl-2 md:px-32">
-          Kontakt starter manikam
+        <h1 className="text-3xl md:text-5xl pl-2 md:px-32 text-center text-primary font-bold">
+          Kontaktirajte trubače Kobre iz Velike Plane
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className=" mx-2 md:mx-20">
-            <div className="space-y-3 md:space-y-10 text-lg md:text-2xl">
+            <div className="space-y-3 md:space-y-6 text-lg md:text-xl">
               <a
-                href="tel:+3816"
+                href="tel:+381641234567"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  <FaPhone className="text-[20px] lg:text-[30px]" />
-                  +38160 000 000
+                  <FaPhone className="text-[20px] lg:text-[25px]" />
+                  +381 64 123 4567
                 </button>
               </a>
               <a
-                href="viber://chat?number=%2B3816"
+                href="viber://chat?number=%2B381641234567"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  <FaViber className="text-[28px] lg:text-[35px] p-1 bg-purple-600 text-white rounded-xl rounde" />{" "}
-                  +38160 000 000
+                  <FaViber className="text-[25px] lg:text-[30px] p-1 bg-purple-600 text-white rounded-xl" />{" "}
+                  +381 64 123 4567
                 </button>
               </a>
               <a
-                href="https://wa.me/3816"
+                href="https://wa.me/381641234567"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  <FaWhatsappSquare className="text-[30px] lg:text-[35px] rounded-2xl text-green-700 " />{" "}
-                  +38160 000 000
+                  <FaWhatsappSquare className="text-[25px] lg:text-[30px] rounded-2xl text-green-700 " />{" "}
+                  +381 64 123 4567
                 </button>
               </a>
               <a
-                href="mailto:"
+                href="mailto:trubacikobre@gmail.com"
                 className="py-[7px] flex border-b-[1px] border-primary"
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
-                  <Mail className=" w-[28px] h-[28px]" />{" "}
-                  startermanikam@gmail.com
+                  <Mail className=" w-[25px] h-[25px]" />{" "}
+                  trubacikobre@gmail.com
                 </button>
               </a>
               <a
-                href=""
+                href="https://instagram.com/trubacikobre"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
-                  <FaInstagram className=" text-[28px] lg:text-[30px]" />
-                  manikam_starter
+                  <FaInstagram className=" text-[25px] lg:text-[28px]" />
+                  @trubacikobre
                 </button>
               </a>
               <a
-                href=""
+                href="https://facebook.com/trubacikobre"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="py-[7px] flex border-b-[1px] border-primary "
               >
                 <button className="hover:scale-110 transition-transform duration-500 px-4 md:px-8 flex gap-4 items-center">
                   {" "}
-                  <Facebook className=" text-[28px] lg:text-[30px]" />
-                  Manikam Starter
+                  <Facebook className=" text-[25px] lg:text-[28px]" />
+                  Trubači Kobre
                 </button>
               </a>
             </div>
@@ -139,13 +139,13 @@ export default function Contact() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="lg:text-xl">
+                        <FormLabel className="text-lg lg:text-xl">
                           Ime i Prezime:
                         </FormLabel>
 
                         <FormControl>
                           <Input
-                            placeholder="Unesite ime i prezime"
+                            placeholder="Vaše ime i prezime"
                             {...field}
                           />
                         </FormControl>
@@ -159,12 +159,12 @@ export default function Contact() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="lg:text-xl">
+                        <FormLabel className="text-lg lg:text-xl">
                           Broj telefona:
                         </FormLabel>
                         <FormControl>
                           <Input
-                            placeholder="Unesite vas broj telefona"
+                            placeholder="Vaš broj telefona"
                             {...field}
                           />
                         </FormControl>
@@ -178,9 +178,9 @@ export default function Contact() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="lg:text-xl">Email:</FormLabel>
+                        <FormLabel className="text-lg lg:text-xl">Email:</FormLabel>
                         <FormControl>
-                          <Input placeholder="john@example.com" {...field} />
+                          <Input placeholder="vasa.email@example.com" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -192,13 +192,13 @@ export default function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="lg:text-xl  ">
-                          Vasa poruka:
+                        <FormLabel className="text-lg lg:text-xl">
+                          Detalji o proslavi:
                         </FormLabel>
                         <FormControl>
                           <Textarea
                             {...field}
-                            placeholder="Vasa poruka za nas"
+                            placeholder="Opišite nam vašu proslavu - datum, vreme, broj gostiju, tip proslave, muzičke želje..."
                             className="text-gray-800"
                           />
                         </FormControl>
@@ -210,7 +210,7 @@ export default function Contact() {
                     disabled={isLoading}
                     className="bg-primary  hover:bg-gray-600 transition-colors ease-in-out duration-500"
                   >
-                    {isLoading ? "Sending....." : "Send"}
+                    {isLoading ? "Šalje se..." : "Pošaljite upit"}
                   </Button>
                 </div>
               </form>
@@ -218,13 +218,14 @@ export default function Contact() {
           </div>
         </div>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92892.91707130236!2d21.810959218314256!3d43.316276176269426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0c240c81f65%3A0x56319fe3122ac3cd!2zTmnFoQ!5e0!3m2!1sen!2srs!4v1738712533479!5m2!1sen!2srs"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45578.77089535!2d20.6!3d44.33!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a1b8b8b8b8b8b%3A0x8b8b8b8b8b8b8b8b!2sVelika%20Plana!5e0!3m2!1sen!2srs!4v1638712533479!5m2!1sen!2srs"
           width="600"
           height="450"
           style={{ border: "0" }}
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full rounded-2xl"
+          title="Mapa Velike Plane - lokacija trubača Kobre"
         ></iframe>
       </div>
     </div>
