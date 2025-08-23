@@ -2,6 +2,7 @@
 import React from "react";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 
 const Statistika = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -66,36 +67,6 @@ const Statistika = () => {
               </div>
             </motion.div>
           ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Statistika;
-        <div>
-          <p className="text-4xl md:text-5xl font-bold text-primary">
-            {inView && <CountUp end={24} duration={2} suffix="+" />}
-          </p>
-          <p className="mt-2 text-lg">Godina iskustva</p>
-        </div>
-        <div>
-          <p className="text-4xl md:text-5xl font-bold text-primary">
-            {inView && <CountUp end={1500} duration={2} suffix="+" />}
-          </p>
-          <p className="mt-2 text-lg">Uspešnih nastupa</p>
-        </div>
-        <div>
-          <p className="text-4xl md:text-5xl font-bold text-primary">
-            {inView && <CountUp end={300} duration={2} suffix="+" />}
-          </p>
-          <p className="mt-2 text-lg">Svadbi ozvučeno</p>
-        </div>
-        <div>
-          <p className="text-4xl md:text-5xl font-bold text-primary">
-            {inView && <CountUp end={50} duration={2} suffix="+" />}
-          </p>
-          <p className="mt-2 text-lg">Gradova u Srbiji</p>
         </div>
       </div>
     </section>

@@ -54,19 +54,3 @@ const PozoviteNasOdmah = () => {
 };
 
 export default PozoviteNasOdmah;
-        </h2>
-        <a href="tel:+381641234567">
-          <motion.button
-            whileHover={{ translateY: "-5px" }}
-            whileTap={{ scale: 0.95 }}
-            className=" text-nowrap flex gap-3 text-2xl md:text-3xl items-center text-muted-foreground bg-muted rounded-lg px-4 md:px-8 md:py-3 py-2"
-          >
-            <PhoneIcon /> Rezervišite nastup
-          </motion.button>
-        </a>
-      </div>
-    </div>
-  );
-};
-
-export default PozoviteNasOdmah;
