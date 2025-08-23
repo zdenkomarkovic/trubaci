@@ -19,13 +19,11 @@ export default function Home() {
     <div className="">
       <Hero />
       <About />
-      <CardsKosina />
       <About2 />
       <Statistika />
       <PozoviteNasOdmah />
       <CardWithImage />
       <PozoviteNasOdmahImage />
-      <Statistika />
       <Cards1 title={"Zašto izabrati nas"} data={cards1Data} />
       <Cards2
         title={"Naše najpopularnije usluge"}
