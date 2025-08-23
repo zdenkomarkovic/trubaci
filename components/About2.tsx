@@ -58,7 +58,7 @@ const About2 = () => {
               <p className="text-xl md:text-2xl font-bold">
                 📞 Kontaktirajte nas i rezervišite nezaboravan muzički doživljaj!
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
         
@@ -85,11 +85,9 @@ const About2 = () => {
           </div>
         </motion.div>
       </div>
-    </div>
-  );
-};
-
-export default About2;
+      <div>
+        <div>
+          <p>
             Tražite{" "}
             <span className="font-bold">najbolje trubače u Velikoj Plani</span> i
             okolini? Naš profesionalni orkestar je spreman da učini vašu proslavu nezaboravnom – bilo da je u pitanju{" "}
