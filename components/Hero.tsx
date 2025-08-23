@@ -9,10 +9,6 @@ import {
 import Fade from "embla-carousel-fade";
 import Autoplay from "embla-carousel-autoplay";
 
-import Hero1 from "../public/hero1.jpg";
-import Hero2 from "../public/hero2.jpg";
-import Hero3 from "../public/hero3.jpg";
-
 import Image from "next/image";
 import { PhoneIcon } from "lucide-react";
 import Link from "next/link";
@@ -37,23 +33,29 @@ const Hero = () => {
         <CarouselContent>
           <CarouselItem>
             <Image
-              src={Hero1}
+              src="/hero1.jpg"
               alt="Trubači Kobre Velika Plana - profesionalni nastup"
               className="w-full h-[100dvh] object-cover"
+              width={1920}
+              height={1080}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              src={Hero2}
+              src="/hero2.jpg"
               alt="Trubači za svadbe Velika Plana"
               className="w-full h-[100dvh] object-cover"
+              width={1920}
+              height={1080}
             />
           </CarouselItem>
           <CarouselItem>
             <Image
-              src={Hero3}
+              src="/hero3.jpg"
               alt="Najbolji trubači za proslave u Velikoj Plani"
               className="w-full h-[100dvh] object-cover"
+              width={1920}
+              height={1080}
             />
           </CarouselItem>
         </CarouselContent>
