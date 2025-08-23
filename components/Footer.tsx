@@ -22,8 +22,8 @@ export default function Footer() {
               </li>
 
               <li>
-                <Link href="/usluge" className=" hover:text-primary">
-                  Usluge
+                <Link href="/o-nama" className=" hover:text-primary">
+                  O nama
                 </Link>
               </li>
 
@@ -38,14 +38,14 @@ export default function Footer() {
           <div className="space-y-3 pb-5 md:pb-0">
             <div>
               {" "}
-              <a href="tel:+38160 000 000">
-                <p className="hover:text-primary">Telefon: +38160 000 000</p>
+              <a href="tel:+381641234567">
+                <p className="hover:text-primary">Telefon: +381 64 123 4567</p>
               </a>
             </div>
             <div>
-              <a href="mailto:" target={"_blank"}>
+              <a href="mailto:trubacikobre@gmail.com" target={"_blank"}>
                 <p className="text-wrap  hover:text-primary">
-                  Email: starter mail
+                  Email: trubacikobre@gmail.com
                 </p>
               </a>
             </div>
@@ -59,16 +59,16 @@ export default function Footer() {
             </div>
           </div>
           <div className="md:col-span-1 col-span-2 text-center text-primary">
-            <h3 className="text-lg font-semibold mb-2 md:mb-4">
-              starter naslov
+            <h3 className="text-xl font-semibold mb-2 md:mb-4">
+              Trubači Kobre Velika Plana
             </h3>
 
-            <p className=" font-bold ">starter poruka</p>
+            <p className=" font-bold ">Vaš izbor za nezaboravne proslave!</p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-center text-center gap-2 md:gap-10 border-t-[1px] border-cool-green mt-10 pt-5">
-          <p>&copy; 2025 _________. Sva prava zadržana.</p>
+          <p>&copy; 2025 Trubači Kobre Velika Plana. Sva prava zadržana.</p>
           <a href="https://www.manikamwebsolutions.com/" target="_blank">
             izrada sajta:{" "}
             <span className="font-bold text-primary"> ManikamWebSolutions</span>

@@ -14,8 +14,8 @@ const Cards2Kosina = ({
   return (
     <div className="">
       <div className="container px-5 mx-auto py-10 md:py-16 border-b-2 space-y-10 md:space-y-20">
-        <h2 className="text-4xl md:text-5xl text-center text-primary font-bold">
-          {title}
+        <h2 className="text-3xl md:text-5xl text-center text-primary font-bold">
+          Specijalne usluge trubača Kobre
         </h2>
         <div className="grid md:grid-cols-3 text-center gap-6 md:gap-8 items-stretch">
           {data.map((item) => {
@@ -26,7 +26,7 @@ const Cards2Kosina = ({
             );
           })}
         </div>
-        <p className="first-letter:pl-6 text-xl md:text-3xl">{text.text}</p>
+        <p className="first-letter:pl-6 text-lg md:text-2xl">{text.text}</p>
       </div>
     </div>
   );

@@ -14,29 +14,29 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Usluge",
+    title: "Naše usluge",
     list: [
       {
-        title: "Kuhinje",
-        link: "",
+        title: "Svadbe",
+        link: "/svadbe",
       },
       {
-        title: "Plakari",
-        link: "",
+        title: "Slave",
+        link: "/slave",
       },
       {
-        title: "TV Komode",
-        link: "",
+        title: "Proslave",
+        link: "/proslave",
       },
       {
-        title: "Projektovanje Enterijera",
-        link: "",
+        title: "Korporativni eventi",
+        link: "/korporativni-eventi",
       },
     ],
   },
   {
-    title: "Proizvodi",
-    link: "/proizvodi",
+    title: "O nama",
+    link: "/o-nama",
   },
   {
     title: "Kontakt",
@@ -53,38 +53,38 @@ export interface WorkList {
 export const workList = [
   {
     id: 1,
-    title: "Grupni treninzi",
-    text: "Oblikuj svoje telo i poboljšaj kondiciju uz dinamične grupne treninge! Vežbaj u motivišućem okruženju, uz stručno vođstvo i podršku tima. Pridruži se i zajedno postižemo ciljeve!",
+    title: "Svadbe u Velikoj Plani",
+    text: "Učinimo vaš najvažniji dan nezaboravnim! Trubači Kobre iz Velike Plane pružaju vrhunsku muzičku atmosferu za svadbe. Od tradicionalnih srpskih pesama do moderne muzike - prilagođavamo se vašim željama i stvaramo magične trenutke.",
     icon: IoIosPeople,
   },
   {
     id: 2,
-    title: "Individualni treninzi",
-    text: "Ostvari maksimalne rezultate uz personalizovane individualne treninge! Treniraj prema svom tempu, uz stručnu podršku i plan prilagođen tvojim ciljevima. Fokus je na tebi!",
+    title: "Krsne slave",
+    text: "Proslavite krsnu slavu uz tradicionalnu srpsku muziku! Naši iskusni trubači iz Velike Plane znaju kako da stvore pravu atmosferu za ovaj sveti dan. Repertoar uključuje crkvene pesme, tradicionalne melodije i sve što vaša duša želi.",
     icon: IoIosPerson,
   },
   {
     id: 3,
-    title: "Pilates",
-    text: "Poboljšaj fleksibilnost, snagu i držanje uz pilates treninge! Uz kontrolisane pokrete i fokus na disanje, oblikuj telo i oslobodi se stresa. Idealno za sve nivoe kondicije!",
+    title: "Rođendani i proslave",
+    text: "Svaki rođendan zaslužuje posebnu muziku! Trubači Kobre prave nezaboravne proslave u Velikoj Plani i okolini. Bilo da je u pitanju dečji rođendan ili jubilej, mi ćemo obezbediti pravu atmosferu za veselje.",
     icon: IoFitnessOutline,
   },
   {
     id: 4,
-    title: "Body power",
-    text: "Ojačaj mišiće i poboljšaj izdržljivost uz intenzivan trening snage! Kombinacija tegova i funkcionalnih vežbi pomoći će ti da postigneš vrhunsku formu.",
+    title: "Korporativni eventi",
+    text: "Učinite vaše poslovne događaje nezaboravnima! Naši profesionalni trubači iz Velike Plane pružaju elegantnu muzičku podršku za korporativne proslave, otvaranja, promocije i sve vrste poslovnih događaja.",
     icon: GiWeightLiftingUp,
   },
   {
     id: 5,
-    title: "Mix-fit",
-    text: " Dinamičan spoj kardio i snage za maksimalne rezultate! Raznovrsni pokreti, visoka energija i zabavna atmosfera čine svaki trening izazovnim i efektivnim.",
+    title: "Tradicionalna srpska muzika",
+    text: "Čuvamo i negujemo bogatu tradiciju srpske muzike! Naš repertoar obuhvata najlepše tradicionalne pesme, kola, čoček i sve ono što čini srce srpsko. Svaki nastup je putovanje kroz našu muzičku baštinu.",
     icon: MdOutlineSportsGymnastics,
   },
   {
     id: 6,
-    title: "Aeronix",
-    text: "Spoj aerobnih vežbi i funkcionalnog treninga za bolju kondiciju i oblikovanje tela! Povećaj izdržljivost, sagori kalorije i uživaj u energičnom ritmu vežbanja.",
+    title: "Moderna muzika",
+    text: "Pratimo i savremene trendove! Pored tradicionalne muzike, naši trubači iz Velike Plane izvode i moderne hitove, pop pesme i sve što publika voli. Kombinujemo tradiciju sa modernošću za savršeno iskustvo.",
     icon: PiRocketLaunchBold,
   },
 ];
@@ -99,38 +99,38 @@ export interface TestimonialData {
 export const testimonialData: TestimonialData[] = [
   {
     id: 1,
-    title: "Jelena R.",
+    title: "Marija i Stefan - Svadba u Velikoj Plani",
     image: "/hero1.jpg",
     description:
-      "Treninzi su odlični, atmosfera motivišuća, a instruktori puni znanja i energije! Već nakon nekoliko nedelja osećam ogromnu promenu u kondiciji i snazi. Preporučujem svima!",
+      "Trubači Kobre su učinili našu svadbu nezaboravnom! Profesionalni pristup, odličan repertoar i neverovatna energija. Svi gosti su bili oduševljeni. Hvala vam što ste bili deo našeg najlepšeg dana!",
   },
   {
     id: 2,
-    title: "Ivana S.",
+    title: "Porodica Jovanović - Krsna slava",
     image: "/hero1.jpg",
     description:
-      "Fitnes klub je za mene više od mesta za vežbanje – ovde sam pronašla ekipu koja me inspiriše i podržava! Vežbamo zajedno, bodrimo se i družimo i van treninga. Ne bih ovo menjala ni za šta!",
+      "Za našu krsnu slavu smo angažovali trubače Kobre iz Velike Plane. Bili su fantastični! Znaju sve tradicionalne pesme i stvorili su pravu atmosferu za ovaj sveti dan. Definitivno ih preporučujemo!",
   },
   {
     id: 3,
-    title: "Ana M.",
+    title: "Miloš - 50. rođendan",
     image: "/hero2.jpg",
     description:
-      "Posle svakog treninga osećam se snažnije i zdravije! Programi su prilagođeni svim nivoima, a podrška trenera me stalno gura ka boljoj verziji sebe.",
+      "Moj jubilej je bio savršen zahvaljujući trubačima Kobre! Svirali su sve moje omiljene pesme i gosti su plesali do kasno u noć. Profesionalci u svakom smislu!",
   },
   {
     id: 4,
-    title: "Katarina N.",
+    title: "Restoran 'Dunav' - Korporativni event",
     image: "/hero3.jpg",
     description:
-      "Od kada treniram ovde, imam više energije, manje stresa i bolju kondiciju! Ambijent je fantastičan, a treninzi su uvek dinamični i zanimljivi.",
+      "Za otvaranje našeg restorana u Velikoj Plani angažovali smo trubače Kobre. Njihov nastup je privukao mnogo ljudi i stvorio odličnu atmosferu. Hvala na profesionalnom pristupu!",
   },
   {
     id: 5,
-    title: "Milica P.",
+    title: "Ana i Petar - Godišnjica braka",
     image: "/hero1.jpg",
     description:
-      "Treniram ovde već nekoliko godina i mogu reći da mi je ovo druga porodica! Pored sjajnih treninga, upoznala sam divne ljude koji su mi postali bliski prijatelji. Motivacija i podrška su neverovatni!",
+      "Za našu 25. godišnjicu braka pozvali smo trubače Kobre. Svirali su pesme iz vremena kada smo se venčali i podsetili nas na najlepše trenutke. Emotivno i nezaboravno iskustvo!",
   },
 ];
 
@@ -145,26 +145,26 @@ export const cards1Data: Cards1Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "20+ godina iskustva",
+    text: "Više od dve decenije sviramo po Velikoj Plani i celoj Srbiji, donoseći radost na hiljade proslava.",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Profesionalni pristup",
+    text: "Uvek dolazimo pripremljeni, na vreme i sa kompletnom opremom za nezaboravan muzički doživljaj.",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Iskustvo i profesionalizam",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Bogat repertoar",
+    text: "Od tradicionalnih srpskih pesama do modernih hitova - imamo muziku za svaki ukus i priliku.",
   },
   {
     id: 4,
     icon: GiWeight,
-    title: "Srbija i inostranstvo",
-    text: "Višegodišnje iskustvo u opremanju enterijera.",
+    title: "Cela Srbija i region",
+    text: "Nastupamo u Velikoj Plani, Smederevu, Požarevcu, Beogradu i širom Srbije i regiona.",
   },
 ];
 
@@ -249,19 +249,19 @@ export const cards2Data: Cards2Data[] = [
   {
     id: 1,
     icon: GiWeight,
-    title: "Elektroinstalacije",
+    title: "Svadbe u Velikoj Plani",
     text: "",
   },
   {
     id: 2,
     icon: GiWeight,
-    title: "Elektro ormani",
+    title: "Krsne slave",
     text: "",
   },
   {
     id: 3,
     icon: GiWeight,
-    title: "Industrijski elektro ormani",
+    title: "Rođendani i proslave",
     text: "",
   },
 ];
@@ -270,7 +270,7 @@ export interface Cards2DataText {
   text: string;
 }
 export const cards2DataText: Cards2DataText = {
-  text: "Pružamo usluge izrade, montaže i održavanja elektro ormana za domaćinstva, poslovne prostore i industrijska postrojenja. Naš tim vodi računa o kvalitetu instalacija i bezbednosti sistema, uz poštovanje svih standarda i propisa.",
+  text: "Trubači Kobre iz Velike Plane pružaju kompletne muzičke usluge za sve vrste proslava. Naš bogat repertoar, profesionalni pristup i dugogodišnje iskustvo garantuju nezaboravno iskustvo za vas i vaše goste. Kontaktirajte nas i učinimo vašu proslavu posebnom!",
 };
 
 export interface Tim {

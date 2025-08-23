@@ -18,19 +18,19 @@ const PozoviteNasOdmah = () => {
         />
         <div className="flex flex-col gap-6 text-center md:text-left">
           <div>
-            <h2 className="text-4xl text-primary py-3">
+            <h2 className="text-3xl md:text-4xl text-primary py-3">
               <FaRegCircleCheck className="mb-4 text-6xl bg-muted-foreground rounded-full mx-auto md:mx-0" />
-              Potreban vam je transport i šlep vašeg vozila?
+              Potrebni su vam trubači za vašu proslavu?
             </h2>
-            <p className="text-3xl">Šlep služba Purić Čačak</p>
+            <p className="text-2xl md:text-3xl">Trubači Kobre Velika Plana</p>
           </div>
-          <a href="tel:+381659480700">
+          <a href="tel:+381641234567">
             <motion.button
               whileHover={{ translateY: "-5px" }}
               whileTap={{ scale: 0.95 }}
-              className=" mx-auto md:mx-0 text-nowrap flex gap-3 text-3xl items-center text-primary bg-muted rounded-lg px-4 md:px-8 md:py-3 py-2"
+              className=" mx-auto md:mx-0 text-nowrap flex gap-3 text-2xl md:text-3xl items-center text-primary bg-muted rounded-lg px-4 md:px-8 md:py-3 py-2"
             >
-              <PhoneIcon /> Pozovite odmah
+              <PhoneIcon /> Pozovite nas
             </motion.button>
           </a>
         </div>

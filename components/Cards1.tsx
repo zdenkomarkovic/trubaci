@@ -6,8 +6,8 @@ const Cards1 = ({ title, data }: { title: string; data: Cards1Data[] }) => {
   return (
     <div className="">
       <div className="container px-5 mx-auto py-10 md:py-20 border-t-2 space-y-10 md:space-y-20">
-        <h2 className="text-4xl md:text-5xl text-center text-primary font-bold">
-          {title}
+        <h2 className="text-3xl md:text-5xl text-center text-primary font-bold">
+          Zašto izabrati trubače Kobre iz Velike Plane?
         </h2>
         <div className="grid md:grid-cols-4 text-center gap-6 md:gap-8 items-stretch">
           {data.map((item) => {
