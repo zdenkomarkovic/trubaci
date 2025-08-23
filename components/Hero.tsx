@@ -17,50 +17,15 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="relative flex min-h-[100dvh]">
-      <Carousel
-        className="absolute top-0 left-0 w-full h-[100dvh] z-[0]"
-        opts={{ loop: true }}
-        plugins={[
-          Autoplay({
-            stopOnInteraction: false,
-            stopOnFocusIn: false,
-            delay: 6000,
-          }),
-          Fade(),
-        ]}
-      >
-        <div className="absolute top-0 left-0 w-full h-full hero-overlay z-[1]" />
-        <CarouselContent>
-          <CarouselItem>
-            <Image
-              src="/hero1.jpg"
-              alt="Trubači Kobre Velika Plana - profesionalni nastup"
-              className="w-full h-[100dvh] object-cover"
-              width={1920}
-              height={1080}
-            />
-          </CarouselItem>
-          <CarouselItem>
-            <Image
-              src="/hero2.jpg"
-              alt="Trubači za svadbe Velika Plana"
-              className="w-full h-[100dvh] object-cover"
-              width={1920}
-              height={1080}
-            />
-          </CarouselItem>
-          <CarouselItem>
-            <Image
-              src="/hero3.jpg"
-              alt="Najbolji trubači za proslave u Velikoj Plani"
-              className="w-full h-[100dvh] object-cover"
-              width={1920}
-              height={1080}
-            />
-          </CarouselItem>
-        </CarouselContent>
-      </Carousel>
-      
+      <div className="absolute top-0 left-0 w-full h-full hero-overlay z-[1]" />
+      <Image
+        src="/hero.jpg"
+        alt="Trubači Kobre Velika Plana - profesionalni nastup"
+        width={1920}
+        height={1080}
+        className="absolute top-0 left-0 w-full h-[100dvh] z-[0] object-cover"
+      />
+
       <div className="relative flex flex-col gap-8 w-full items-center justify-center text-white z-[1] text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -87,7 +52,9 @@ const Hero = () => {
           className="bg-black/30 backdrop-blur-sm rounded-lg p-6 md:p-8 max-w-3xl border border-yellow-400/30"
         >
           <p className="text-lg md:text-2xl font-light leading-relaxed">
-            Profesionalni trubački orkestar za <strong>svadbe, slave i proslave</strong> u Velikoj Plani i celoj Srbiji
+            Profesionalni trubački orkestar za{" "}
+            <strong>svadbe, slave i proslave</strong> u Velikoj Plani i celoj
+            Srbiji
           </p>
         </motion.div>
 
