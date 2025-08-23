@@ -23,7 +23,6 @@ export default function Home() {
       <PozoviteNasOdmah />
       <CardWithImage />
       <PozoviteNasOdmahImage />
-      {/* <Cards1 title={"Zašto izabrati nas"} data={cards1Data} /> */}
       <Cards2
         title={"Naše najpopularnije usluge"}
         data={cards2Data}
