@@ -1,14 +1,5 @@
 "use client";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel";
-
-import Fade from "embla-carousel-fade";
-import Autoplay from "embla-carousel-autoplay";
-
 import Image from "next/image";
 import { PhoneIcon } from "lucide-react";
 import Link from "next/link";
