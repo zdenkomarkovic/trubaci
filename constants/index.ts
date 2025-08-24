@@ -17,6 +17,10 @@ export const navList = [
     title: "O nama",
     link: "/#o-nama",
   },
+  {
+    title: "Kontakt",
+    link: "/#kontakt",
+  },
 ];
 
 export interface WorkList {

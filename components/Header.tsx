@@ -52,10 +52,7 @@ const DesktopNav = () => (
     {navList.map((item, index) => {
       return (
         <Link key={index} href={item.link}>
-          <motion.li
-            className="transition-colors hover:text-primary cursor-pointer "
-            whileHover={{ color: "hsl(var(--primary))" }}
-          >
+          <motion.li className="transition-colors hover:text-yellow-500 cursor-pointer ">
             {item.title}
           </motion.li>
         </Link>
