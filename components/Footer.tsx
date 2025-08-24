@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Logo i opis */}
           <div className="md:col-span-2 space-y-2">
             <h3 className="text-2xl font-bold mb-4 gold-accent">
-              Trubači Kobre
+              Trubači Velika Plana Kobre
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Profesionalni trubački orkestar iz Velike Plane sa preko 20 godina
