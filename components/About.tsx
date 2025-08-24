@@ -10,7 +10,7 @@ const About = () => {
       id="o-nama"
       className="py-16 md:py-24 bg-gradient-to-b from-white to-gray-50"
     >
-      <div className="container px-4 md:px-8 mx-auto max-w-6xl">
+      <div className="container px-4 md:px-8 mx-auto max-w-6xl overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
