@@ -10,12 +10,7 @@ import {
 } from "./ui/carousel";
 
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { TestimonialData, testimonialData } from "@/constants/index";
 import Autoplay from "embla-carousel-autoplay";
 
@@ -82,11 +77,13 @@ const TestimonialCard = ({ testimonial }: { testimonial: TestimonialData }) => {
         </CardHeader>
         <CardContent className="p-6 flex flex-col justify-between h-full">
           <blockquote className="text-gray-700 italic text-lg leading-relaxed mb-4">
-            "{testimonial.description}"
+            &quot;{testimonial.description}&quot;
           </blockquote>
           <div className="flex justify-center">
             {[...Array(5)].map((_, i) => (
-              <span key={i} className="text-yellow-500 text-xl">★</span>
+              <span key={i} className="text-yellow-500 text-xl">
+                ★
+              </span>
             ))}
           </div>
         </CardContent>

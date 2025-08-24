@@ -1,23 +1,17 @@
 import Image from "next/image";
 import React from "react";
 
-interface BackgroundImageProps {
-  children: React.ReactNode;
-}
-
-const BackgroundImage = ({ children }: BackgroundImageProps) => {
+const BackgroundImage = () => {
   return (
-    <div className="relative min-h-screen">
+    <div className="relative">
       <Image
-        src="/hero1.jpg"
+        src="/truba.jpg"
         alt="Trubači Kobre Velika Plana pozadina"
-        fill
-        className="object-cover"
-        sizes="100vw"
-        priority
+        width={1000}
+        height={1000}
+        className="object-cover w-full md:max-h-[63dvh]"
       />
-      <div className="absolute inset-0 bg-black/60" />
-      {children}
+      <div className="absolute inset-0 bg-black/10" />
     </div>
   );
 };

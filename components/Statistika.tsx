@@ -10,12 +10,14 @@ const Statistika = () => {
   const stats = [
     { number: 24, suffix: "+", label: "Godina iskustva", icon: "🎂" },
     { number: 1500, suffix: "+", label: "Uspešnih nastupa", icon: "🎭" },
-    { number: 300, suffix: "+", label: "Svadbi ozvučeno", icon: "💒" },
-    { number: 50, suffix: "+", label: "Gradova u Srbiji", icon: "🏙️" }
+    { number: 50, suffix: "+", label: "Gradova u Srbiji", icon: "🏙️" },
   ];
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-gradient-to-r from-yellow-600 to-yellow-500">
+    <section
+      ref={ref}
+      className="py-16 md:py-24 bg-gradient-to-r from-yellow-600 to-yellow-500"
+    >
       <div className="container mx-auto px-4 md:px-8 max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -32,8 +34,8 @@ const Statistika = () => {
             Dokaz kvaliteta kroz godine rada
           </p>
         </motion.div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={index}
@@ -46,7 +48,13 @@ const Statistika = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/20">
                 <div className="text-4xl md:text-5xl mb-4">{stat.icon}</div>
                 <div className="text-3xl md:text-4xl font-bold text-white mb-2">
-                  {inView && <CountUp end={stat.number} duration={2} suffix={stat.suffix} />}
+                  {inView && (
+                    <CountUp
+                      end={stat.number}
+                      duration={2}
+                      suffix={stat.suffix}
+                    />
+                  )}
                 </div>
                 <p className="text-lg md:text-xl text-yellow-100 font-medium">
                   {stat.label}

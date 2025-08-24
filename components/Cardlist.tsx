@@ -17,11 +17,12 @@ const Cardlist = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Naše <span className="gold-accent">usluge</span>
+            <span className="gold-accent">U čemu smo mi najbolji</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6"></div>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-            Pružamo kompletne muzičke usluge za sve vrste proslava u Velikoj Plani i okolini
+            Pružamo kompletne muzičke usluge za sve vrste proslava u Velikoj
+            Plani i okolini
           </p>
         </motion.div>
 
@@ -33,7 +34,9 @@ const Cardlist = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className={`flex ${index % 2 === 0 ? "justify-start" : "justify-end"} w-full`}
+              className={`flex ${
+                index % 2 === 0 ? "justify-start" : "justify-end"
+              } w-full`}
             >
               <Card className="w-full md:w-4/5 lg:w-3/4 elegant-shadow hover:shadow-2xl transition-shadow duration-300">
                 <CardHeader className="bg-gradient-to-r from-yellow-50 to-yellow-100">

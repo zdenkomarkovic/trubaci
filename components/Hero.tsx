@@ -55,7 +55,7 @@ const Hero = () => {
           transition={{ duration: 1, delay: 1.5 }}
           className="flex flex-col md:flex-row gap-4 mt-4"
         >
-          <a href="tel:+381641234567">
+          <a href="tel:+381612579600">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -65,15 +65,6 @@ const Hero = () => {
               Pozovite nas odmah
             </motion.button>
           </a>
-          <Link href="/kontakt">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all duration-300"
-            >
-              Pošaljite upit
-            </motion.button>
-          </Link>
         </motion.div>
       </div>
     </div>

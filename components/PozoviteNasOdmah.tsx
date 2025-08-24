@@ -6,7 +6,7 @@ import { PhoneIcon } from "lucide-react";
 const PozoviteNasOdmah = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-r from-gray-900 to-gray-800 relative overflow-hidden">
-      <div className="absolute inset-0 bg-dots opacity-20"></div>
+      <div className="absolute inset-0 opacity-20"></div>
 
       <div className="container px-4 md:px-8 mx-auto max-w-4xl relative z-10">
         <motion.div

@@ -14,33 +14,8 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Naše usluge",
-    list: [
-      {
-        title: "Svadbe",
-        link: "/svadbe",
-      },
-      {
-        title: "Slave",
-        link: "/slave",
-      },
-      {
-        title: "Proslave",
-        link: "/proslave",
-      },
-      {
-        title: "Korporativni eventi",
-        link: "/korporativni-eventi",
-      },
-    ],
-  },
-  {
     title: "O nama",
-    link: "/o-nama",
-  },
-  {
-    title: "Kontakt",
-    link: "/kontakt",
+    link: "/#o-nama",
   },
 ];
 
@@ -117,13 +92,6 @@ export const testimonialData: TestimonialData[] = [
     image: "/hero2.jpg",
     description:
       "Moj jubilej je bio savršen zahvaljujući trubačima Kobre! Svirali su sve moje omiljene pesme i gosti su plesali do kasno u noć. Profesionalci u svakom smislu!",
-  },
-  {
-    id: 4,
-    title: "Restoran 'Dunav' - Korporativni event",
-    image: "/hero3.jpg",
-    description:
-      "Za otvaranje našeg restorana u Velikoj Plani angažovali smo trubače Kobre. Njihov nastup je privukao mnogo ljudi i stvorio odličnu atmosferu. Hvala na profesionalnom pristupu!",
   },
   {
     id: 5,

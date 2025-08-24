@@ -16,13 +16,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Trubači Kobre Velika Plana - Najbolji trubači za svadbe, slave i proslave",
-  description: "Trubači Kobre iz Velike Plane - profesionalni trubači za svadbe, slave, proslave i sva veselja. Dugogodišnje iskustvo, tradicionalna i moderna muzika. Pozovite nas!",
+  title:
+    "Trubači Kobre Velika Plana - Najbolji trubači za svadbe, slave i proslave",
+  description:
+    "Trubači Kobre iz Velike Plane - profesionalni trubači za svadbe, slave, proslave i sva veselja. Dugogodišnje iskustvo, tradicionalna i moderna muzika. Pozovite nas!",
   icons: {
-    icon: "/manikam.png",
-    apple: "/manikam.png",
+    icon: "/android-chrome-192x192.png",
+    apple: "/apple-touch-icon.png",
   },
-  keywords: ["trubači Velika Plana", "trubači Kobre", "trubači za svadbu", "trubači za slavu", "trubači za proslave", "najbolji trubači", "tradicionalna muzika", "srpska muzika", "trubači Smederevo", "trubači Požarevac", "trubači Beograd", "veselje", "muzika za svadbu"],
+  keywords: [
+    "trubači Velika Plana",
+    "trubači Kobre",
+    "trubači za svadbu",
+    "trubači za slavu",
+    "trubači za proslave",
+    "najbolji trubači",
+    "tradicionalna muzika",
+    "srpska muzika",
+    "trubači Smederevo",
+    "trubači Požarevac",
+    "trubači Beograd",
+    "veselje",
+    "muzika za svadbu",
+  ],
   alternates: {
     canonical: "https://www.trubacikobre.rs/",
   },

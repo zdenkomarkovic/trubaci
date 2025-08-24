@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 
 html {
@@ -78,7 +78,7 @@ h3 {
 }
 
 .traditional-border::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -4px;
   left: -4px;
@@ -101,8 +101,8 @@ h3 {
 .hero-overlay {
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.4) 0%,
     rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.4) 100%
   );
 }
