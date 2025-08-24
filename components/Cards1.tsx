@@ -48,7 +48,7 @@ const Cards1 = () => {
 
         <div className="text-center">
           <h2 className="text-4xl md:text-6xl gold-accent font-black mb-4">
-            🏆 Zašto Kobre Trubači Velika Plana ? 🏆
+            🏆 Zašto Trubači Velika Plana ? 🏆
           </h2>
           <div className="inline-block bg-gradient-to-r from-yellow-600 to-yellow-500 text-white px-6 py-2 rounded-full text-lg font-bold">
             ⭐ Iz Velike Plane za celu Srbiju ⭐

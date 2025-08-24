@@ -33,19 +33,19 @@ export const workList = [
   {
     id: 1,
     title: "Svadbe u Velikoj Plani",
-    text: "Učinimo vaš najvažniji dan nezaboravnim! Trubači Kobre iz Velike Plane pružaju vrhunsku muzičku atmosferu za svadbe. Od tradicionalnih srpskih pesama do moderne muzike - prilagođavamo se vašim željama i stvaramo magične trenutke.",
+    text: "Učinimo vaš najvažniji dan nezaboravnim! Trubači iz Velike Plane pružaju vrhunsku muzičku atmosferu za svadbe. Od tradicionalnih srpskih pesama do moderne muzike - prilagođavamo se vašim željama i stvaramo magične trenutke.",
     icon: IoIosPeople,
   },
   {
     id: 2,
     title: "Krsne slave",
-    text: "Proslavite krsnu slavu uz tradicionalnu srpsku muziku! Naši iskusni trubači iz Velike Plane znaju kako da stvore pravu atmosferu za ovaj sveti dan. Repertoar uključuje crkvene pesme, tradicionalne melodije i sve što vaša duša želi.",
+    text: "Proslavite krsnu slavu uz tradicionalnu srpsku muziku! Naši iskusni trubači iz Velike Plane znaju kako da stvore pravu atmosferu za ovaj sveti dan. Repertoar uključuje tradicionalne melodije i sve što vaša duša želi.",
     icon: IoIosPerson,
   },
   {
     id: 3,
     title: "Rođendani i proslave",
-    text: "Svaki rođendan zaslužuje posebnu muziku! Trubači Kobre prave nezaboravne proslave u Velikoj Plani i okolini. Bilo da je u pitanju dečji rođendan ili jubilej, mi ćemo obezbediti pravu atmosferu za veselje.",
+    text: "Svaki rođendan zaslužuje posebnu muziku! Trubači Velika Plana prave nezaboravne proslave u Velikoj Plani i okolini. Bilo da je u pitanju dečji rođendan ili jubilej, mi ćemo obezbediti pravu atmosferu za veselje.",
     icon: IoFitnessOutline,
   },
   {
@@ -81,28 +81,28 @@ export const testimonialData: TestimonialData[] = [
     title: "Marija i Stefan - Svadba u Velikoj Plani",
     image: "/hero1.jpg",
     description:
-      "Trubači Kobre su učinili našu svadbu nezaboravnom! Profesionalni pristup, odličan repertoar i neverovatna energija. Svi gosti su bili oduševljeni. Hvala vam što ste bili deo našeg najlepšeg dana!",
+      "Trubači Velika plana su učinili našu svadbu nezaboravnom! Profesionalni pristup, odličan repertoar i neverovatna energija. Svi gosti su bili oduševljeni. Hvala vam što ste bili deo našeg najlepšeg dana!",
   },
   {
     id: 2,
     title: "Porodica Jovanović - Krsna slava",
     image: "/hero1.jpg",
     description:
-      "Za našu krsnu slavu smo angažovali trubače Kobre iz Velike Plane. Bili su fantastični! Znaju sve tradicionalne pesme i stvorili su pravu atmosferu za ovaj sveti dan. Definitivno ih preporučujemo!",
+      "Za našu krsnu slavu smo angažovali trubače iz Velike Plane. Bili su fantastični! Znaju sve tradicionalne pesme i stvorili su pravu atmosferu za ovaj sveti dan. Definitivno ih preporučujemo!",
   },
   {
     id: 3,
     title: "Miloš - 50. rođendan",
     image: "/hero2.jpg",
     description:
-      "Moj jubilej je bio savršen zahvaljujući trubačima Kobre! Svirali su sve moje omiljene pesme i gosti su plesali do kasno u noć. Profesionalci u svakom smislu!",
+      "Moj jubilej je bio savršen zahvaljujući trubačima Velika Plana! Svirali su sve moje omiljene pesme i gosti su plesali do kasno u noć. Profesionalci u svakom smislu!",
   },
   {
     id: 5,
     title: "Ana i Petar - Godišnjica braka",
     image: "/hero1.jpg",
     description:
-      "Za našu 25. godišnjicu braka pozvali smo trubače Kobre. Svirali su pesme iz vremena kada smo se venčali i podsetili nas na najlepše trenutke. Emotivno i nezaboravno iskustvo!",
+      "Za našu 25. godišnjicu braka pozvali smo trubače Velika Plana. Svirali su pesme iz vremena kada smo se venčali i podsetili nas na najlepše trenutke. Emotivno i nezaboravno iskustvo!",
   },
 ];
 

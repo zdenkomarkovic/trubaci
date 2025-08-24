@@ -100,10 +100,10 @@ export default function Header() {
                 scrolled ? "text-gray-900" : " text-white"
               }`}
             >
-              Trubači Kobre
+              Trubači
             </div>
             <div
-              className={`text-sm ${
+              className={`text-base ${
                 scrolled ? "text-gray-600" : " text-white"
               }`}
             >

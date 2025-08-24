@@ -16,17 +16,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Trubači Kobre Velika Plana - Najbolji trubači za svadbe, slave i proslave",
+  title: "Trubači Velika Plana - Najbolji trubači za svadbe i proslave",
   description:
-    "Trubači Kobre iz Velike Plane - profesionalni trubači za svadbe, slave, proslave i sva veselja. Dugogodišnje iskustvo, tradicionalna i moderna muzika. Pozovite nas!",
+    "Trubači iz Velike Plane - profesionalni trubači za svadbe, slave, proslave i sva veselja. Dugogodišnje iskustvo, tradicionalna i moderna muzika. Pozovite nas!",
   icons: {
     icon: "/android-chrome-192x192.png",
     apple: "/apple-touch-icon.png",
   },
   keywords: [
     "trubači Velika Plana",
-    "trubači Kobre",
     "trubači za svadbu",
     "trubači za slavu",
     "trubači za proslave",

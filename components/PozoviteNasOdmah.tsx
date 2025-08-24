@@ -18,7 +18,7 @@ const PozoviteNasOdmah = () => {
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Rezervišite nastup{" "}
-            <span className="gold-accent">trubača Kobre</span>
+            <span className="gold-accent">trubača Velika Plana</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-8"></div>
           <p className="text-lg md:text-2xl text-gray-300 mb-8 leading-relaxed">
@@ -26,7 +26,8 @@ const PozoviteNasOdmah = () => {
             moderne!
             <br />
             <span className="text-yellow-400">
-              Dostupni smo 24/7 za sve termine u Velikoj Plani i celoj Srbiji
+              Dostupni smo 24/7 za sve termine u Velikoj Plani, Smederevu,
+              Požarevcu i celoj Srbiji
             </span>
           </p>
 

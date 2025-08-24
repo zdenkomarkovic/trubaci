@@ -19,7 +19,7 @@ const About = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Trubači <span className="gold-accent">Kobre</span>
+            Trubači <span className="gold-accent">Velika Plana</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-gray-600 font-light">
@@ -36,11 +36,12 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-              Trubači Kobre iz <strong>Velike Plane</strong> osnovani su 2000.
-              godine sa ciljem da čuvaju i neguju bogatu tradiciju srpske
-              muzike. Tokom više od dve decenije rada, postali smo jedan od
-              najtraženijih trubačkih orkestara u{" "}
-              <strong>Velikoj Plani i široj okolini</strong>.
+              Trubači iz <strong>Velike Plane</strong> osnovani su 2000. godine
+              sa ciljem da čuvaju i neguju bogatu tradiciju srpske muzike. Tokom
+              više od dve decenije rada, postali smo jedan od najtraženijih
+              trubačkih orkestara u{" "}
+              <strong>Velikoj Plani Požarevcu Smederevu i široj okolini</strong>
+              .
             </p>
 
             <div className={`space-y-6 transition-all duration-500 `}>

@@ -22,7 +22,7 @@ const Cardlist = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6"></div>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Pružamo kompletne muzičke usluge za sve vrste proslava u Velikoj
-            Plani i okolini
+            Plani, Smederevu, Požarevcu i okolini
           </p>
         </motion.div>
 
