@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "@/node_modules/next/image";
+import Slider from "./Slider";
 
 const About = () => {
   return (
@@ -80,6 +81,7 @@ const About = () => {
             />
           </motion.div>
         </div>
+        <Slider />
       </div>
     </section>
   );

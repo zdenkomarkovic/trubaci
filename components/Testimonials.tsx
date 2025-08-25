@@ -26,12 +26,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-            Šta kažu naši <span className="gold-accent">klijenti</span>
+            Šta kažu o nama
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-yellow-600 to-yellow-400 mx-auto mb-6"></div>
-          <p className="text-lg md:text-xl text-gray-600">
-            Zadovoljni klijenti iz cele Srbije
-          </p>
+          <p className="text-lg md:text-xl text-gray-600">Iz cele Srbije</p>
         </motion.div>
 
         <Carousel

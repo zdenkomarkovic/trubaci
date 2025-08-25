@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "muzika za svadbu",
   ],
   alternates: {
-    canonical: "https://www.trubacikobre.rs/",
+    canonical: "https://",
   },
 };
 

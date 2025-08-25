@@ -15,12 +15,13 @@ export default function Home() {
       <About />
       <Cards1 />
       <PozoviteNasOdmah />
+      <VideoCard video={"/trubaci2.mp4"} />
       <Statistika />
       <BackgroundImage />
       <Cardlist />
 
       <Testimonials />
-      <VideoCard />
+      <VideoCard video={"/trubaci.mp4"} />
     </div>
   );
 }
