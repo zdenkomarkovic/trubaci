@@ -16,7 +16,7 @@ const Hero = () => {
         className="absolute top-0 left-0 w-full h-[100dvh] z-[0] object-cover"
       />
 
-      <div className="relative flex flex-col gap-5 w-full items-center justify-center text-white z-[1] text-center px-4">
+      <div className="mt-32 relative flex flex-col gap-5 w-full items-center justify-center text-white z-[1] text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
